@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste GA4</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_ID_AQUI"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SEU_ID_AQUI');
+    </script>
+</head>
+<body>
+    <h1>Site de Teste GA4</h1>
+    <p>Clique no botão abaixo para testar um evento personalizado:</p>
+    <button onclick="gtag('event', 'botao_clicado', {'event_category': 'teste', 'event_label': 'botao_teste'});">
+        Testar Evento
+    </button>
+</body>
+</html>
