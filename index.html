@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Insights - Análise e Ciência de Dados</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NNH3RSDH');</script>
+    <!-- End Google Tag Manager -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWDJYKXLG4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,52 +22,97 @@
         gtag('config', 'G-HWDJYKXLG4');
     </script>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .hero { background: #007BFF; color: white; padding: 50px 0; text-align: center; }
-        .container img { max-width: 100%; height: auto; }
+        body { font-family: 'Arial', sans-serif; background-color: #f4f4f9; }
+        .hero { background: linear-gradient(to right, #007BFF, #6610f2); color: white; padding: 70px 0; text-align: center; }
+        .container img { max-width: 100%; height: auto; border-radius: 8px; }
+        .section { padding: 60px 0; }
+        .portfolio-item img { transition: transform 0.3s ease-in-out; }
+        .portfolio-item img:hover { transform: scale(1.05); }
+        footer { background: #343a40; color: white; padding: 20px 0; text-align: center; }
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNH3RSDH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="hero">
         <h1>Data Insights</h1>
         <p>Explorando o poder da Análise e Ciência de Dados</p>
     </header>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Sobre Nós</h2>
-                <p>Somos especialistas em transformar dados brutos em insights valiosos.</p>
-                <button class="btn btn-primary" onclick="gtag('event', 'botao_sobre_nos', { 'event_category': 'interacao', 'event_label': 'Sobre Nós' });">
-                    Saiba Mais
-                </button>
-            </div>
-            <div class="col-md-6">
-                <img src="https://source.unsplash.com/600x400/?data,analytics" alt="Análise de Dados">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Data Insights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <div class="container section" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em transformar dados brutos em insights valiosos. Nossa equipe trabalha com Machine Learning, Inteligência Artificial e Visualização de Dados.</p>
     </div>
 
-    <div class="container mt-5">
+    <div class="container section" id="servicos">
         <h2>Serviços</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Machine Learning</h4>
-                <p>Modelagem e algoritmos preditivos para tomar decisões inteligentes.</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Dashboards Interativos</h4>
-                <p>Visualização de dados dinâmica para facilitar análises.</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Big Data</h4>
-                <p>Processamento e análise de grandes volumes de dados.</p>
-            </div>
-        </div>
+        <ul>
+            <li>Desenvolvimento de Modelos de Machine Learning</li>
+            <li>Criação de Dashboards e Visualizações Interativas</li>
+            <li>Consultoria em Ciência de Dados</li>
+        </ul>
     </div>
 
-    <div class="container mt-5">
+    <div class="container section" id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Conheça alguns dos nossos projetos mais recentes:</p>
+        <ul>
+            <li>Previsão de Demanda usando Redes Neurais</li>
+            <li>Automação de Relatórios com Python</li>
+            <li>Sistemas de Recomendação</li>
+        </ul>
+    </div>
+
+    <div class="container section" id="blog">
+        <h2>Blog</h2>
+        <p>Artigos recentes:</p>
+        <ul>
+            <li><a href="#">Como o Machine Learning Está Transformando Empresas</a></li>
+            <li><a href="#">5 Ferramentas Essenciais para Análise de Dados</a></li>
+            <li><a href="#">A Revolução da Inteligência Artificial</a></li>
+        </ul>
+    </div>
+
+    <div class="container section" id="contato">
         <h2>Contato</h2>
-        <form onsubmit="gtag('event', 'form_submit', { 'event_category': 'formulario', 'event_label': 'Contato' });">
+        <form>
             <div class="mb-3">
-                <label clas
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Data Insights. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
